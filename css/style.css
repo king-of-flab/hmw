@@ -1,3 +1,19 @@
 body {
   background-color: yellow
 }
+
+img {
+
+  margin: 0px 0px 0px 950px
+}
+.container {
+  margin: 270px 80px 0px 80px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+
+p {
+  font-size: 60px
+
+}

@@ -12,8 +12,10 @@ function updateH1 (newH1) {
 function askForANumber (guessedNum, randomNumber) {
   if (guessedNum > randomNumber) {
     updateH1('lower, randomNumber is ' + randomNumber)
+    alert('Key in a lower number')
   } else if (guessedNum < randomNumber) {
     updateH1('higher, randomNumber is ' + randomNumber)
+    alert('Key in a higher number')
   } else if (guessedNum === randomNumber) {
     updateH1('correct')
     gameOver = true

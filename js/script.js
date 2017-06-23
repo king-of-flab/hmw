@@ -15,27 +15,23 @@ function updateBG (newBG) {
 }
 
 function askForANumber (guessedNum, randomNumber) {
-    if (guessedNum > randomNumber) {
+  if (guessedNum > randomNumber) {
     updateH1('Please input a lower number')
     alert('Key in a lower number')
-
   } if (guessedNum < randomNumber) {
     updateH1('Please input a higher number')
     alert('Key in a higher number')
-
   } if (guessedNum === randomNumber) {
     updateH1('BRILLIANT! YOU GOT IT!')
-    updateBG ('rgb(80,209,222)')
+    updateBG('rgb(80,209,222)')
     gameOver = true
   }
   checkForGameover()
 }
 
-
 function checkForGameover () {
   if (gameOver) {
     alert('Press Enter to Continue')
-
   } else {
     guessedNum1 = prompt('Please try again')
     guessedNum = parseInt(guessedNum1)

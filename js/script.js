@@ -1,4 +1,4 @@
-var guessedNum1 = prompt('The first guess: type your number!')
+// var guessedNum1 = prompt('The first guess: type your number!')
 var guessedNum = parseInt(guessedNum1)
 var gameOver = false
 var x = Math.floor(Math.random() * (10 - 0)) + 0
@@ -28,7 +28,6 @@ function askForANumber (guessedNum, randomNumber) {
   }
   checkForGameover()
 }
-
 function checkForGameover () {
   if (gameOver) {
     alert('Press Enter to Continue')
@@ -43,9 +42,9 @@ function newGame () {
   askForANumber(guessedNum, x)
 }
 
-if (!gameOver) {
-  newGame()
-}
+// if (!gameOver) {
+//   newGame()
+// }
 
 var isPurple = false
 setInterval(function () {
